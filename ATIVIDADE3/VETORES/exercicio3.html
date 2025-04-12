@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        var num = []
+        var contador = 0
+
+        for (i=0; i < 20; i++) {
+            num[i] = parseInt(prompt("Digite os numeros desejados: "))
+        }
+        for(i = 0; i < num.length; i++) {
+            if (num[i] % 2 == 0){
+                contador++
+                
+            }
+        }
+            console.log(`A quantidade de par são: ${contador}`);
+
+
+
+    </script>
+    
+</body>
+</html>

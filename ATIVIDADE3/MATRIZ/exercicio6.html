@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        var matriz = []
+
+        for (let i = 0; i < 3; i++) {
+            matriz[i] = []
+
+            for ( let j = 0; j < 2; j++)
+            matriz[i][j] = parseInt(prompt(`Escreva numeros para as posições: ${i}, ${j}`))
+
+        }
+
+        var transposta = []
+
+
+            for ( let j = 0; j < 3; j++){
+                var linhatransposta = []
+                for (let i = 0; i < 2; i++){
+                    linhatransposta.push(matriz[i][j])
+            }
+            transposta.push(linhatransposta)
+        }
+
+
+            for (let i = 0; i < transposta.length; i++){
+        console.log(transposta[i].join(""))
+    }
+
+
+
+
+    </script>
+    
+</body>
+</html>

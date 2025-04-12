@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        
+        var alunos = []
+        var media = []
+
+        for (let i = 0; i < 3; i++) {
+            aluno = {
+                cpf: parseInt(prompt("Insira o cpf do aluno: ")),
+                nome: prompt("Ensira o nome do aluno: "),
+                nota1: parseInt(prompt("Ensira a primeira nota: ")),
+                nota2: parseInt(prompt("Ensira a segunda nota: ")),
+                nota3: parseInt(prompt("Ensira a terceira nota: ")),
+
+                media : function(){
+                    var soma = this.nota1+this.nota2+this.nota3;
+                    return soma = soma / 3;
+                }
+            };
+
+            alunos.push(aluno)
+
+            media.push(aluno.media())
+
+        }
+            for (let i = 0; i < alunos.length; i++){
+                var mediatotal = alunos[i].media();
+
+            console.log(`Nome do aluno: ${alunos[i].nome}`);
+            console.log(`Cpf do aluno: ${alunos[i].cpf}`);
+            console.log(`Media do aluno: ${mediatotal}`);
+            console.log(`--------------------------------`);
+
+            }
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
