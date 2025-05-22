@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function fibonacci(n) {
+  if (n === 0) {
+    return 0;
+  } else if (n === 1) {
+    return 1;
+  } else {
+    return fibonacci(n - 1) + fibonacci(n - 2);
+  }
+}
+
+var n = parseInt(prompt("Digite o valor de n:"));
+var resultado = fibonacci(n);
+alert("O " + n + "º termo da sequência de Fibonacci é: " + resultado);
+
+    </script>
+    
+</body>
+</html>
